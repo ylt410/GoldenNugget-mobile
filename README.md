@@ -1,6 +1,13 @@
 ![Artboard][NuggetLogo]
 
 # GoldenNugget (Mobile)
+
+> 简体中文本地化：此版本基于 [GoldenNugget-Team/GoldenNugget-mobile](https://github.com/GoldenNugget-Team/GoldenNugget-mobile)，原作者及所有贡献者的署名见下方 Credits。项目仍遵循仓库中的 `LICENSE` 许可条款。修改日期：2026-10-30。
+>
+> **与上游版本的差异：** 加入 `zh-Hans` 界面翻译资源、局域网权限提示中文翻译，并让动态菜单标题与调整项名称读取本地化文本；设备调整逻辑保持不变。手机系统语言设置为简体中文时，会优先显示已有翻译。部分较长的诊断和技术说明仍沿用英文。
+>
+> **构建中文 IPA：** Fork 后提交修改；仓库的 `Build IPA` GitHub Actions 工作流会在 macOS 上编译并上传 `GoldenNuggetMobile.ipa`（未签名）。安装前需要使用可信侧载工具完成签名。操作系统最低要求仍为 iOS 26.0。
+
 Unlock your device's full potential, with iOS 27 support!
 
 Customize your device with animated wallpapers, disable pesky daemons, and more!

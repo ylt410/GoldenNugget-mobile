@@ -153,6 +153,12 @@ targets:
     platform: iOS
     sources:
       - path: Nugget
+      # Simplified Chinese UI strings.  Keep these as a .lproj bundle resource
+      # so SwiftUI Text/Label/Button localization works without code changes.
+      - path: layout/Applications/GoldenNuggetMobile.app/zh-Hans.lproj/Localizable.strings
+        buildPhase: resources
+      - path: layout/Applications/GoldenNuggetMobile.app/zh-Hans.lproj/InfoPlist.strings
+        buildPhase: resources
       # The catalog, compiled by actool into Assets.car.  It currently holds one
       # asset — the Icon Composer document below — but it stays the place a
       # colour or image asset would go.

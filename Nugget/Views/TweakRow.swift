@@ -60,7 +60,7 @@ struct TweakRow: View {
                 }
             case .text:
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(spec.title)
+                    Text(LocalizedStringKey(spec.title))
                     if let safetyWarning { NativeSafetyNote(safetyWarning) }
                     TextField("(empty = clear)", text: textBinding)
                         .textFieldStyle(.roundedBorder)
@@ -70,7 +70,7 @@ struct TweakRow: View {
                 }
             case .number:
                 VStack(alignment: .leading, spacing: 6) {
-                    Text(spec.title)
+                    Text(LocalizedStringKey(spec.title))
                     if let safetyWarning { NativeSafetyNote(safetyWarning) }
                     TweakNumberField(spec: spec, selection: $selection)
                     TweakRowCaption(id: spec.id, detail: [spec.numberHint, spec.warning].compactMap { $0 }.joined(separator: "\n"))
@@ -160,7 +160,7 @@ private struct TweakRowLabel: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(title)
+            Text(LocalizedStringKey(title))
             Text(id)
                 .font(.caption)
                 .foregroundStyle(.tertiary)

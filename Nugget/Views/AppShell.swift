@@ -64,20 +64,20 @@ enum AppDestination: String, CaseIterable, Identifiable, Hashable {
 
     var title: String {
         switch self {
-        case .home: "GoldenNugget"
-        case .tweaks: "Tweaks"
-        case .presets: "Presets"
-        case .community: "Community Catalog"
-        case .posterBoard: "PosterBoard"
-        case .templates: "Templates"
-        case .wallpaperDownloads: "Download Wallpapers"
-        case .statusBar: "Status Bar"
-        case .wallet: "Wallet"
-        case .passcode: "Passcode"
-        case .daemons: "Daemons"
-        case .media: "Media"
-        case .files: "Files"
-        case .settings: "Settings"
+        case .home: String(localized: "GoldenNugget")
+        case .tweaks: String(localized: "Tweaks")
+        case .presets: String(localized: "Presets")
+        case .community: String(localized: "Community Catalog")
+        case .posterBoard: String(localized: "PosterBoard")
+        case .templates: String(localized: "Templates")
+        case .wallpaperDownloads: String(localized: "Download Wallpapers")
+        case .statusBar: String(localized: "Status Bar")
+        case .wallet: String(localized: "Wallet")
+        case .passcode: String(localized: "Passcode")
+        case .daemons: String(localized: "Daemons")
+        case .media: String(localized: "Media")
+        case .files: String(localized: "Files")
+        case .settings: String(localized: "Settings")
         }
     }
 
